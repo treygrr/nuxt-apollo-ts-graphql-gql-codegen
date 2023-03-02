@@ -1,0 +1,18 @@
+#import "./components/gql/FilmConnection.query.gql
+
+query Person($id: ID!) {
+  person(id: $id) {
+    birthYear
+    created
+    edited
+    eyeColor
+    gender
+    hairColor
+    height
+    id
+    mass
+    name
+    skinColor
+    ...FilmConnection
+  }
+}
